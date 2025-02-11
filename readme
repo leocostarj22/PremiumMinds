@@ -1,0 +1,40 @@
+README - Desenvolvimento do Site / Desafio Premium Minds
+
+# Sobre o Projeto
+Este projeto consiste no desenvolvimento de um site utilizando as tecnologias **HTML, CSS e JavaScript**. O site inclui uma estrutura de navegação dinâmica, um sistema de validação de formulário e elementos interativos para aprimorar a experiência do usuário.
+
+## Tecnologias Utilizadas
+- **HTML**: Utilizado para estruturar o conteúdo do site.
+- **CSS**: Responsável pela estilização e responsividade da interface.
+- **JavaScript**: Implementa funcionalidades interativas, como a alternância do menu e a validação do formulário.
+
+## Estrutura do Projeto
+```
+/ projeto-site
+  |-- index.html      # Página principal do site
+  |-- styles.css      # Arquivo de estilos
+  |-- script.js       # Lógica e interatividade
+  |-- imagens/        # Imagens e outros recursos
+```
+
+## Funcionalidades Principais
+1. **Menu Interativo**
+   - Um botão permite exibir ou ocultar a barra lateral (sidebar) utilizando JavaScript.
+
+2. **Formulário com Validação**
+   - Campos obrigatórios: Email, Senha e Telefone.
+   - O telefone deve conter exatamente 9 dígitos numéricos.
+   - Exibição de mensagens de erro ou sucesso após a submissão.
+
+## Como Executar
+1. Faça o download ou clone este repositório.
+2. Abra o arquivo **index.html** em um navegador.
+3. O site funcionará sem necessidade de servidor, pois é um projeto estático.
+
+## Melhorias Futuras
+- Adicionar suporte a banco de dados para armazenamento dos registros.
+- Criar uma versão com back-end para autenticação de usuários.
+- Melhorar a acessibilidade e otimizar o carregamento do site.
+
+## Autor
+Desenvolvido por Leonardo Silva.

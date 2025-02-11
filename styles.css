@@ -1,0 +1,352 @@
+/* Definições do body */
+body {
+    font-family: 'Source Sans Pro', sans-serif; /* Define a fonte para o texto */
+    margin: 0; /* Remove as margens padrão do body */
+    padding: 0; /* Remove o preenchimento padrão do body */
+    display: flex; /* Configura o layout flexível para o body */
+    flex-direction: column; /* Organiza os elementos na direção da coluna */
+    width: 100%; /* Define a largura do body para ocupar 100% da tela */
+    overflow: hidden; /* Impede que as barras de rolagem apareçam */
+    height: 100vh; /* Garante que o corpo e a página ocupem toda a altura da tela */
+}
+
+/* Estilo da barra superior */
+.topbar {
+    width: 100%; /* Largura de 100% para ocupar toda a largura */
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 10px 20px; /* Preenchimento da barra */
+    display: flex; /* Utiliza layout flexível */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+}
+
+/* Estilo da imagem na barra superior */
+.topbar img {
+    height: 40px; /* Define a altura da imagem */
+}
+
+/* Contêiner principal que envolve a sidebar e o conteúdo */
+.container {
+    display: flex; /* Utiliza layout flexível */
+    width: 100%; /* Largura de 100% */
+    flex-grow: 1; /* Faz com que o contêiner cresça */
+}
+
+/* Estilo da sidebar */
+.sidebar {
+    width: 250px; /* Largura da sidebar */
+    background-color: #2C3E50; /* Cor de fundo da sidebar */
+    color: white; /* Cor do texto na sidebar */
+    display: flex; /* Utiliza layout flexível */
+    flex-direction: column; /* Organiza os itens da sidebar na coluna */
+    justify-content: space-between; /* Distribui os itens no espaço disponível */
+}
+
+/* Estilo do texto dentro da sidebar */
+.sidebar span {
+    font-size: 18px; /* Define o tamanho da fonte */
+}
+
+/* Estilo do menu na sidebar */
+.sidebar nav ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 30px 0 0 50px; /* Define o preenchimento da lista */
+}
+
+/* Estilo dos itens da lista no menu da sidebar */
+.sidebar nav ul li {
+    padding: 10px 0; /* Define o espaçamento entre os itens */
+    font-size: 18px; /* Define o tamanho da fonte dos itens */
+}
+
+/* Estilo dos links no menu da sidebar */
+.sidebar nav ul li a {
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Estilo para os links quando o mouse passa sobre eles */
+.sidebar nav ul li a:hover {
+    color: #3498DB; /* Muda a cor para preto */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo para o item ativo do menu (em foco) */
+.sidebar nav ul li a:focus {
+    font-weight: bold; /* Deixa o item ativo em negrito */
+    color: #3498DB; /* Cor do texto quando em foco */
+}
+
+/* Estilo do conteúdo principal */
+.content {
+    flex-grow: 1; /* Faz o conteúdo crescer para preencher o espaço restante */
+    background-color: #F5F5F5; /* Cor de fundo para o conteúdo */
+    padding: 30px 50px 5px 50px; /* Preenchimento interno do conteúdo */
+}
+
+/* Estilo para caixas dentro do conteúdo */
+.box {
+    background: white; /* Cor de fundo da caixa */
+    padding: 0 0 50px 0; /* Preenchimento interno da caixa */
+    border-radius: 0; /* Sem borda arredondada */
+}
+
+/* Estilo do parágrafo dentro da caixa */
+.box p {
+    padding: 0px 20px 20px 30px; /* Preenchimento interno do parágrafo */
+}
+
+/* Estilo geral do grupo de checkboxes */
+.checkbox-group {
+    display: flex; /* Layout flexível para os itens */
+    flex-direction: row; /* Organiza os itens na horizontal */
+    align-items: center; /* Alinha os itens verticalmente */
+    align-content: center; /* Alinha os itens verticalmente */
+    width: 100%; /* Largura de 100% */
+    padding: 0px 20px 10px 5px; /* Preenchimento interno */
+    margin-left: 20px; /* Margem à esquerda */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do label dos checkboxes */
+.checkbox-group label {
+    margin-left: 0px; /* Sem margem à esquerda */
+    font-size: 16px; /* Tamanho da fonte do label */
+    cursor: pointer; /* Aponta o cursor para indicar que é clicável */
+}
+
+/* Estilo dos checkboxes */
+input[type="checkbox"] {
+    appearance: none; /* Remove a aparência padrão dos checkboxes */
+    -webkit-appearance: none; /* Remove a aparência no Safari */
+    -moz-appearance: none; /* Remove a aparência no Firefox */
+    width: 25px; /* Define a largura do checkbox */
+    height: 25px; /* Define a altura do checkbox */
+    border: 2px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Borda arredondada */
+    position: relative; /* Necessário para o posicionamento do símbolo de check */
+    background-color: white; /* Cor de fundo */
+    cursor: pointer; /* Indica que o item é clicável */
+}
+
+/* Estilo para o checkbox marcado */
+input[type="checkbox"]:checked {
+    background-color: #3498DB; /* Cor de fundo quando marcado */
+    border-color: #3498DB; /* Cor da borda quando marcado */
+}
+
+/* Símbolo de check quando o checkbox está marcado */
+input[type="checkbox"]:checked::after {
+    content: '✔'; /* Símbolo de check */
+    position: absolute; /* Posiciona o símbolo no centro */
+    top: 50%; /* Alinha verticalmente */
+    left: 50%; /* Alinha horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o símbolo */
+    font-size: 18px; /* Tamanho do símbolo */
+    color: white; /* Cor do símbolo */
+}
+
+/* Estilo para o label dos checkboxes */
+label {
+    font-size: 16px; /* Tamanho da fonte do label */
+    padding-left: 10px; /* Espaçamento à esquerda */
+}
+
+/* Estilo para o formulário de informações de contato */
+.contact-info {
+    display: grid; /* Layout em grid */
+    grid-template-columns: 1fr 2fr; /* Primeira coluna menor (1fr) e a segunda coluna maior (2fr) */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para cada div dentro do formulário de contato */
+.contact-info div {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Organiza os itens na coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+}
+
+/* Estilo dos campos de entrada no formulário de contato */
+.contact-info input {
+    width: 100%; /* Largura de 100% */
+    padding: 5px 20px 10px 10px; /* Preenchimento interno */
+    border: none; /* Remove a borda padrão */
+    border-bottom: solid 2px #BDC3C7; /* Borda inferior */
+    max-width: 300px; /* Largura máxima */
+    margin-left: 30px; /* Margem à esquerda */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo para os botões */
+.buttons {
+    display: flex; /* Layout flexível */
+    justify-content: flex-end; /* Alinha os botões à direita */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 50px; /* Margem superior */
+    width: 100%; /* Largura de 100% */
+}
+
+/* Estilo do botão de cancelamento */
+.cancel {
+    background: white; /* Cor de fundo branca */
+    border: 1px solid #BDC3C7; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que o botão é clicável */
+    padding: 10px 20px; /* Preenchimento interno */
+    width: 250px; /* Largura fixa do botão */
+    height: 50px; /* Altura do botão */
+    border-radius: 30px; /* Bordas arredondadas maiores */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de cancelamento ao passar o mouse */
+.cancel:hover {
+    background: #BDC3C7; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo do botão de cancelamento ao ser clicado */
+.cancel:active {
+    background: #3498DB; /* Cor de fundo ao clicar */
+    color: white; /* Cor do texto ao clicar */
+}
+
+/* Estilo do botão de salvar */
+.save {
+    background: #3498DB; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que o botão é clicável */
+    padding: 10px 20px; /* Preenchimento interno */
+    width: 250px; /* Largura fixa */
+    height: 50px; /* Altura do botão */
+    border-radius: 30px; /* Bordas arredondadas maiores */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de salvar ao passar o mouse */
+.save:hover {
+    background: #BDC3C7; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estiliza a mensagem de aviso */
+.message {
+    margin-top: 10px; /* Define a margem superior de 10px */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 5px; /* Arredonda as bordas */
+    display: none; /* Escondido por padrão */
+}
+
+/* Estiliza a mensagem de sucesso */
+.message.success {
+    background-color: #d4edda; /* Define o fundo verde claro */
+    color: #155724; /* Define a cor do texto verde escuro */
+    border: 1px solid #c3e6cb; /* Adiciona uma borda verde */
+    display: block; /* Torna visível */
+}
+
+/* Estiliza a mensagem de erro */
+.message.error {
+    background-color: #f8d7da; /* Define o fundo vermelho claro */
+    color: #721c24; /* Define a cor do texto vermelho escuro */
+    border: 1px solid #f5c6cb; /* Adiciona uma borda vermelha */
+    display: block; /* Torna visível */
+}
+/* Estilo do título h3 */
+h3 {
+    background-color: #EBEBEB; /* Cor de fundo para o título */
+    color: #354151; /* Cor do texto */
+    padding: 20px 0 10px 20px; /* Define o preenchimento interno do título */
+    margin: 0 0 15px 0; /* Define a margem para afastar o título dos outros elementos */
+    font-size: 18px; /* Define o tamanho da fonte */
+    font-family: 'Source Sans Pro', sans-serif; /* Define a fonte do título */
+    font-weight: 600; /* Define o peso da fonte */
+}
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* h3 à esquerda, botão à direita */
+    width: 100%; /* Para garantir que o container ocupe toda a largura disponível */
+    font-size: 32px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Margem inferior do título */
+    color:354052; /* Cor do texto */
+    background-color: #EBEBEB;
+}
+.custom-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.custom-button:hover {
+    opacity: 0.8;
+}
+
+/* Estilo do rodapé */
+footer {
+    font-size: 13px; /* Tamanho da fonte */
+    width: 100%; /* Largura de 100% */
+    background-color: #283142; /* Cor de fundo */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: auto; /* Empurra o rodapé para o final */
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Estiliza o botão do menu hambúrguer */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 10px; /* Muda para a direita */
+    top: 10px;
+}
+
+/* Ocultar sidebar por padrão em telas pequenas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Exibir botão hambúrguer */
+    }
+
+    .sidebar {
+        position: fixed;
+        right: -250px; /* Agora o menu vem da direita */
+        width: 250px;
+        height: 100vh;
+        background: #333;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .sidebar.show {
+        right: 0;
+    }
+    /* Estilo para o formulário de informações de contato */
+    .contact-info {
+        display: flex; /* Layout em grid */
+        flex-direction: column; /* Organiza os itens na coluna */
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+    .buttons {
+        display: flex; /* Layout flexível */
+        justify-content: center; /* Alinha os botões à direita */
+    }
+    .cancel {
+        width: 150px; /* Largura fixa do botão */
+        height: 40px; /* Altura do botão */
+    }
+    .save {
+        width: 150px; /* Largura fixa do botão */
+        height: 40px; /* Altura do botão */
+    }
+    body {
+        height: 120%; /* Garante que o corpo e a página ocupem toda a altura da tela */
+        overflow: auto; /* Adiciona uma barra de rolagem se necessário */
+    }
+}
+

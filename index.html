@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">
+        <!-- Botão do menu hambúrguer -->
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+        <!-- Link para a página principal ao clicar na logo -->
+        <a href="index.html">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+    </div>
+    
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#lorem">Lorem Ipsum</a></li>
+                    <li class="active"><a href="#utilizador">Utilizador</a></li>
+                    <li><a href="#quantum">Quantum solum</a></li>
+                    <li><a href="#marcus">Marcus Tremer</a></li>
+                </ul>
+            </nav>
+            <!-- Footer dentro da sidebar -->
+            <footer>
+                <p>2019 © Premium-minds.com</p>
+            </footer>
+        </aside>
+
+        <main class="content">
+            <h1>Utilizador</h1>
+            <section class="box">
+                <div class="title">
+                    <div class="title-container">
+                        <h3>Tipo de Utilizador</h3>
+                        <button class="custom-button" onclick="handleButtonClick()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus">
+                                <path d="M5 12h14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1">Project Manager</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="checkbox2">
+                        <label for="checkbox2">Developer</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="checkbox3">
+                        <label for="checkbox3">Architect</label>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <form id="contact-form">
+                        <div class="title-container">
+                            <h3>Contacto</h3>
+                            <button class="custom-button" onclick="handleButtonClick()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus">
+                                    <path d="M5 12h14"></path>
+                                </svg>
+                            </button>
+                        </div>
+                                <div class="contact-info">
+                                    <div>
+                                        <p><b>Email</b></p>
+                                        <input type="email" id="email" name="email" placeholder="pm@premium-minds.com" required>
+                                    </div>
+                                    <div>
+                                        <p><b>Palavra-passe</b></p>
+                                        <input type="password" id="password" name="password" placeholder="********" required minlength="6">
+                                    </div>
+                                    <div>
+                                        <p><b>Telefone</b></p>
+                                        <input type="tel" id="telephone" name="telephone" placeholder="+351" pattern="[0-9]{9}" required>
+                                    </div>
+                                </div>
+                        <!-- Mensagem de Sucesso ou Erro -->
+                        <div id="message" class="message"></div>
+                    </form>
+                </div>
+            </section>
+            <div class="buttons">
+                <button type="reset" class="cancel">Cancelar</button>
+                <button type="submit" class="save">GUARDAR</button>
+            </div>    
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
